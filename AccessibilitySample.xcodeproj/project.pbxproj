@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3FEF76F2224A9AFA005403B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF76F1224A9AFA005403B2 /* AppDelegate.swift */; };
-		3FEF76F4224A9AFA005403B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF76F3224A9AFA005403B2 /* ViewController.swift */; };
+		3FEF76F4224A9AFA005403B2 /* VoiceOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF76F3224A9AFA005403B2 /* VoiceOverViewController.swift */; };
 		3FEF76F7224A9AFA005403B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEF76F5224A9AFA005403B2 /* Main.storyboard */; };
 		3FEF76F9224A9AFC005403B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FEF76F8224A9AFC005403B2 /* Assets.xcassets */; };
 		3FEF76FC224A9AFC005403B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEF76FA224A9AFC005403B2 /* LaunchScreen.storyboard */; };
+		3FEF7704224A9B12005403B2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3FEF7703224A9B12005403B2 /* README.md */; };
+		3FEF7706224A9F61005403B2 /* TextStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF7705224A9F61005403B2 /* TextStrings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FEF76EE224A9AFA005403B2 /* AccessibilitySample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibilitySample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FEF76F1224A9AFA005403B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FEF76F3224A9AFA005403B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FEF76F3224A9AFA005403B2 /* VoiceOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceOverViewController.swift; sourceTree = "<group>"; };
 		3FEF76F6224A9AFA005403B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FEF76F8224A9AFC005403B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FEF76FB224A9AFC005403B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FEF76FD224A9AFC005403B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FEF7703224A9B12005403B2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3FEF7705224A9F61005403B2 /* TextStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		3FEF76E5224A9AFA005403B2 = {
 			isa = PBXGroup;
 			children = (
+				3FEF7703224A9B12005403B2 /* README.md */,
 				3FEF76F0224A9AFA005403B2 /* AccessibilitySample */,
 				3FEF76EF224A9AFA005403B2 /* Products */,
 			);
@@ -54,14 +59,31 @@
 		3FEF76F0224A9AFA005403B2 /* AccessibilitySample */ = {
 			isa = PBXGroup;
 			children = (
+				3FEF7708224AA04F005403B2 /* Texts */,
+				3FEF7707224AA045005403B2 /* ViewControllers */,
 				3FEF76F1224A9AFA005403B2 /* AppDelegate.swift */,
-				3FEF76F3224A9AFA005403B2 /* ViewController.swift */,
 				3FEF76F5224A9AFA005403B2 /* Main.storyboard */,
 				3FEF76F8224A9AFC005403B2 /* Assets.xcassets */,
 				3FEF76FA224A9AFC005403B2 /* LaunchScreen.storyboard */,
 				3FEF76FD224A9AFC005403B2 /* Info.plist */,
 			);
 			path = AccessibilitySample;
+			sourceTree = "<group>";
+		};
+		3FEF7707224AA045005403B2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FEF76F3224A9AFA005403B2 /* VoiceOverViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3FEF7708224AA04F005403B2 /* Texts */ = {
+			isa = PBXGroup;
+			children = (
+				3FEF7705224A9F61005403B2 /* TextStrings.swift */,
+			);
+			path = Texts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +146,7 @@
 			files = (
 				3FEF76FC224A9AFC005403B2 /* LaunchScreen.storyboard in Resources */,
 				3FEF76F9224A9AFC005403B2 /* Assets.xcassets in Resources */,
+				3FEF7704224A9B12005403B2 /* README.md in Resources */,
 				3FEF76F7224A9AFA005403B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FEF76F4224A9AFA005403B2 /* ViewController.swift in Sources */,
+				3FEF7706224A9F61005403B2 /* TextStrings.swift in Sources */,
+				3FEF76F4224A9AFA005403B2 /* VoiceOverViewController.swift in Sources */,
 				3FEF76F2224A9AFA005403B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SY7RWQB994;
 				INFOPLIST_FILE = AccessibilitySample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SY7RWQB994;
 				INFOPLIST_FILE = AccessibilitySample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
