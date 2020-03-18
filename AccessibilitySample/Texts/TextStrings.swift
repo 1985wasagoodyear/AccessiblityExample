@@ -8,8 +8,7 @@
 
 import Foundation
 
-struct TextStrings {
-    private init() { }
+enum TextStrings {
     static let trains = "Kawanishi-Noseguchi, Kinunobebashi, Takiyama, Uguisunomori, Tsuzumigataki, Tada, Hirano, Ichinotorii, Uneno, Yamashita, Sasabe, Kofudai, Tokiwadai, Myoukenguchi."
     
     static let enableVoiceOver = "This app is built for accessibility.\n\nPlease enable VoiceOver."

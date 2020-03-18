@@ -19,10 +19,12 @@ final class VoiceOverViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(setVoiceOverStatus),
-                                               name: UIAccessibility.voiceOverStatusDidChangeNotification,
-                                               object: nil)
+        NotificationCenter
+            .default
+            .addObserver(self,
+                         selector: #selector(setVoiceOverStatus),
+                         name: UIAccessibility.voiceOverStatusDidChangeNotification,
+                         object: nil)
     }
     
     override func viewDidLoad() {
@@ -43,7 +45,7 @@ final class VoiceOverViewController: UIViewController {
     
     @objc func setVoiceOverStatus() {
         // change the text depending on if VoiceOver is currently working
-        let text = (UIAccessibility.isVoiceOverRunning) ? TextStrings.trains :  TextStrings.enableVoiceOver
+        let text = (UIAccessibility.isVoiceOverRunning) ? TextStrings.trains : TextStrings.enableVoiceOver
         label.accessibilityLabel = text
         label.text = text
     }
